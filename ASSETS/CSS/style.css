@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100; /* Assicura che html e body occupino il 100% dell'altezza disponibile */
+  display: flex; /* Usa Flexbox per gestire l'altezza */
+  flex-direction: column; /* Imposta la direzione della colonna per il layout */
+  justify-content: center; /* Centra verticalmente il contenuto */
+  align-items: center; /* Centra orizzontalmente il contenuto */
+}
+
+body {
+  min-height: 100vh; /* Questo è il più importante: garantisce che il body sia ALMENO alto come la viewport */
+  background: #d60076; /* Colore di sfondo gradiente */
+  background: linear-gradient(
+    200deg,
+    rgba(214, 0, 118, 1) 0%,
+    rgba(38, 0, 127, 1) 80%
+  );
+}
+
+#calculator {
+}
+
+#buttons {
+  background-color: #333; /* Colore di sfondo per il div */
+  display: grid; /* Usa il layout a griglia per il div */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Quattro colonne di uguale larghezza */
+  gap: 5px; /* Spazio tra i bottoni */
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatrice JS</title>
+    <link rel="stylesheet" href="../ASSETS/CSS/style.css" />
+    <link
+      rel="icon"
+      href="../ASSETS/IMG/trasferimento.png"
+      type="Icona Calcolatrice"
+    />
+  </head>
+  <body>
+    <!-- div che contiene l'intera calcolatrice -->
+    <div id="calculator">
+      <!-- "display" della calcolatrice -->
+      <input type="text" id="display" disabled />
+      <!-- div che contiene i bottoni della calcolatrice -->
+      <div id="buttons">
+        <!-- Prima riga -->
+        <button class="number" onclick="appendToDisplay('1')">1</button>
+        <!-- numero -->
+        <button class="number" onclick="appendToDisplay('2')">2</button>
+        <!-- numero -->
+        <button class="number" onclick="appendToDisplay('3')">3</button>
+        <!-- numero -->
+        <button class="operator" onclick="appendToDisplay('+')">+</button>
+        <!-- operatore -->
+        <!-- Seconda riga -->
+        <button class="number" onclick="appendToDisplay('4')">4</button>
+        <!-- numero -->
+        <button class="number" onclick="appendToDisplay('5')">5</button>
+        <!-- numero -->
+        <button class="number" onclick="appendToDisplay('6')">6</button>
+        <!-- numero -->
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+        <!-- operatore -->
+        <!-- Terza riga -->
+        <button class="number" onclick="appendToDisplay('7')">7</button>
+        <!-- numero -->
+        <button class="number" onclick="appendToDisplay('8')">8</button>
+        <!-- numero -->
+        <button class="number" onclick="appendToDisplay('9')">9</button>
+        <!-- numero -->
+        <button class="operator" onclick="appendToDisplay('*')">*</button>
+        <!-- operatore -->
+        <!-- Quarta riga -->
+        <button class="operator" onclick="clearDisplay()">C</button>
+        <!-- operatore -->
+        <button class="number" onclick="appendToDisplay('0')">0</button>
+        <!-- numero -->
+        <button class="operator" onclick="calculateResult()">=</button>
+        <!-- operatore -->
+        <button class="operator" onclick="appendToDisplay('/')">/</button>
+        <!-- operatore -->
+      </div>
+    </div>
+  </body>
+  <script src="../SCRIPT/script.js"></script>
+</html>
