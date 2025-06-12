@@ -1,25 +1,36 @@
-html,
+/* HTML */
+html {
+  height: 100%; /* Assicura che html occupi il 100% dell'altezza disponibile */
+}
+/* HEADER */
+header {
+  width: 100%; /* Larghezza del header */
+  text-align: center; /* Centra il testo del header */
+  padding: 20px; /* Padding interno per il header */
+  font-family: "Quicksand", sans-serif; /* Font del header */
+  font-size: 2rem; /* Dimensione del testo del header */
+  color: #fae7ff; /* Colore del testo del header */
+}
+/* Aggiunge un'ombra al testo del header */
+header h1,
+header p {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1); /* L'ombra al testo */
+}
+/* BODY */
 body {
-  height: 100; /* Assicura che html e body occupino il 100% dell'altezza disponibile */
   display: flex; /* Usa Flexbox per gestire l'altezza */
   flex-direction: column; /* Imposta la direzione della colonna per il layout */
   justify-content: center; /* Centra verticalmente il contenuto */
   align-items: center; /* Centra orizzontalmente il contenuto */
-}
-
-body {
-  min-height: 100vh; /* Questo è il più importante: garantisce che il body sia ALMENO alto come la viewport */
+  min-height: 100%; /* Questo è il più importante: garantisce che il body sia ALMENO alto come la viewport */
   background: #d60076; /* Colore di sfondo gradiente */
   background: linear-gradient(
-    200deg,
+    100deg,
     rgba(214, 0, 118, 1) 0%,
     rgba(38, 0, 127, 1) 80%
   );
 }
-
-#calculator {
-}
-
+/* Sezione (div) dove ho inserito i pulsanti della calcolatrice */
 #buttons {
   background-color: #333; /* Colore di sfondo per il div */
   display: grid; /* Usa il layout a griglia per il div */
@@ -28,4 +39,128 @@ body {
     1fr
   ); /* Quattro colonne di uguale larghezza */
   gap: 5px; /* Spazio tra i bottoni */
+  height: 50vh; /* Altezza del div */
+  width: 50vw; /* Larghezza del div */
+  padding: 10px; /*  Padding interno per il div */
+  margin-bottom: 3rem; /* Spinge il div verso l'alto */
+  border: solid 2px black; /* Bordo nero per il div */
+  border-top: none; /* Rimuove il bordo superiore per un aspetto più pulito */
+  border-bottom-left-radius: 10px; /* Rende l'angolo Sx del div arrotondato */
+  border-bottom-right-radius: 10px; /* Rende l'angolo Dx del div arrotondato */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al div */
+  justify-items: center; /* Centra i bottoni all'interno delle celle */
+}
+/* Sezione (div) dove ho inserito il display della calcolatrice */
+#display {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); /* Sfondo semitrasparente con effetto sfocato */
+  width: 50vw; /* Larghezza del display */
+  height: 10vh; /* Altezza del display */
+  color: black; /* Colore del testo del display */
+  font-size: 3rem; /* Dimensione del testo del display */
+  display: flex; /* Usa Flexbox per centrare il testo */
+  justify-content: center; /* Centra il testo orizzontalmente */
+  align-items: center; /* Centra il testo verticalmente */
+  border: solid 2px black; /* Bordo nero per il display */
+  border-top-left-radius: 10px; /* Rende l'angolo Sx del display arrotondato */
+  border-top-right-radius: 10px; /* Rende l'angolo Dx del display arrotondato */
+  padding: 10px; /*  Padding interno per il div */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al div */
+}
+/* css bottoni */
+.number {
+  border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
+  display: flex; /* Usa Flexbox per centrare il testo */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
+  border-radius: 50%; /* Rende i bottoni circolari */
+  justify-content: center; /* Centra il testo orizzontalmente */
+  align-items: center; /* Centra il testo verticalmente */
+  background-color: rgb(15, 15, 15); /* Colore di sfondo per i bottoni */
+  font-weight: bold; /* Grassetto per il testo */
+  font-size: 3rem; /* Dimensione del testo */
+  color: whitesmoke; /* Colore del testo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
+}
+.operator {
+  border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
+  display: flex; /* Usa Flexbox per centrare il testo */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
+  border-radius: 50%; /* Rende i bottoni circolari */
+  justify-content: center; /* Centra il testo orizzontalmente */
+  align-items: center; /* Centra il testo verticalmente */
+  background-color: #ffb13d; /* Colore di sfondo per i bottoni */
+  font-weight: bold; /* Grassetto per il testo */
+  font-size: 3rem; /* Dimensione del testo */
+  color: whitesmoke; /* Colore del testo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
+}
+.operator-canc {
+  border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
+  display: flex; /* Usa Flexbox per centrare il testo */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
+  border-radius: 50%; /* Rende i bottoni circolari */
+  justify-content: center; /* Centra il testo orizzontalmente */
+  align-items: center; /* Centra il testo verticalmente */
+  font-weight: bold; /* Grassetto per il testo */
+  font-size: 3rem; /* Dimensione del testo */
+  background-color: #ff3d3d; /* Colore di sfondo per i bottoni */
+  color: whitesmoke; /* Colore del testo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
+}
+.operator-equal {
+  border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
+  display: flex; /* Usa Flexbox per centrare il testo */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
+  border-radius: 50%; /* Rende i bottoni circolari */
+  justify-content: center; /* Centra il testo orizzontalmente */
+  align-items: center; /* Centra il testo verticalmente */
+  background-color: #6fff59; /* Colore di sfondo per i bottoni */
+  font-weight: bold; /* Grassetto per il testo */
+  font-size: 3rem; /* Dimensione del testo */
+  color: whitesmoke; /* Colore del testo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
+}
+/* feedback colore bordo bottoni al passaggio del mouse */
+.number:hover,
+.operator:hover,
+.operator-equal:hover,
+.operator-canc:hover {
+  border: 3px solid #d60076; /* Aggiunge un bordo rosa al passaggio del mouse */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+/* feedback quando il bottone viene premuto */
+.number:active,
+.operator:active,
+.operator-equal:active,
+.operator-canc:active {
+  transform: scale(0.98); /* Piccolo effetto di "schiacciamento" */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); /* Ombra più scura */
+}
+/* FOOTER */
+footer {
+  width: 100%; /* Larghezza del footer */
+  text-align: center; /* Centra il testo del footer */
+  padding: 10px; /* Padding interno per il footer */
+  font-family: "Quicksand", sans-serif; /* Font del footer */
+  font-size: 1rem; /* Dimensione del testo del footer */
+  margin-top: auto; /* Spinge il footer in fondo alla pagina */
+  position: relative; /* Posizione relativa per il footer */
+  background-color: #333; /* Colore di sfondo del footer */
+  border-top: solid 2px black; /* Bordo superiore per il footer */
+  color: #fff; /* Colore del testo del footer */
+  text-decoration: none; /* Rimuove la sottolineatura dal testo del footer */
+}
+/* Footer <a/> style */
+footer a {
+  color: #fff; /* Colore del link nel footer */
+  text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+footer a:hover {
+  color: #d60076; /* Colore del link attivo nel footer */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
 }

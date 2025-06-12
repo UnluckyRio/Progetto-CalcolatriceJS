@@ -3,59 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titolo -->
     <title>Calcolatrice JS</title>
+    <!-- Link CSS -->
     <link rel="stylesheet" href="../ASSETS/CSS/style.css" />
+    <!-- Icona della Calcolatrice -->
     <link
       rel="icon"
       href="../ASSETS/IMG/trasferimento.png"
       type="Icona Calcolatrice"
     />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- div che contiene l'intera calcolatrice -->
-    <div id="calculator">
-      <!-- "display" della calcolatrice -->
-      <input type="text" id="display" disabled />
-      <!-- div che contiene i bottoni della calcolatrice -->
-      <div id="buttons">
-        <!-- Prima riga -->
-        <button class="number" onclick="appendToDisplay('1')">1</button>
-        <!-- numero -->
-        <button class="number" onclick="appendToDisplay('2')">2</button>
-        <!-- numero -->
-        <button class="number" onclick="appendToDisplay('3')">3</button>
-        <!-- numero -->
-        <button class="operator" onclick="appendToDisplay('+')">+</button>
-        <!-- operatore -->
-        <!-- Seconda riga -->
-        <button class="number" onclick="appendToDisplay('4')">4</button>
-        <!-- numero -->
-        <button class="number" onclick="appendToDisplay('5')">5</button>
-        <!-- numero -->
-        <button class="number" onclick="appendToDisplay('6')">6</button>
-        <!-- numero -->
-        <button class="operator" onclick="appendToDisplay('-')">-</button>
-        <!-- operatore -->
-        <!-- Terza riga -->
-        <button class="number" onclick="appendToDisplay('7')">7</button>
-        <!-- numero -->
-        <button class="number" onclick="appendToDisplay('8')">8</button>
-        <!-- numero -->
-        <button class="number" onclick="appendToDisplay('9')">9</button>
-        <!-- numero -->
-        <button class="operator" onclick="appendToDisplay('*')">*</button>
-        <!-- operatore -->
-        <!-- Quarta riga -->
-        <button class="operator" onclick="clearDisplay()">C</button>
-        <!-- operatore -->
-        <button class="number" onclick="appendToDisplay('0')">0</button>
-        <!-- numero -->
-        <button class="operator" onclick="calculateResult()">=</button>
-        <!-- operatore -->
-        <button class="operator" onclick="appendToDisplay('/')">/</button>
-        <!-- operatore -->
+    <!-- HEADER -->
+    <header>
+      <h1>Calcolatrice JavaScript</h1>
+      <p>Realizzata con HTML, CSS e JavaScript</p>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <!-- div che contiene l'intera calcolatrice -->
+      <div id="calculator">
+        <!-- "display" della calcolatrice -->
+        <input type="text" id="display" disabled />
+        <!-- div che contiene i bottoni della calcolatrice -->
+        <div id="buttons">
+          <!-- Prima riga -->
+          <button class="number" onclick="appendToDisplay('1')">1</button>
+          <!-- numero -->
+          <button class="number" onclick="appendToDisplay('2')">2</button>
+          <!-- numero -->
+          <button class="number" onclick="appendToDisplay('3')">3</button>
+          <!-- numero -->
+          <button class="operator" onclick="appendToDisplay('+')">+</button>
+          <!-- operatore -->
+          <!-- Seconda riga -->
+          <button class="number" onclick="appendToDisplay('4')">4</button>
+          <!-- numero -->
+          <button class="number" onclick="appendToDisplay('5')">5</button>
+          <!-- numero -->
+          <button class="number" onclick="appendToDisplay('6')">6</button>
+          <!-- numero -->
+          <button class="operator" onclick="appendToDisplay('-')">-</button>
+          <!-- operatore -->
+          <!-- Terza riga -->
+          <button class="number" onclick="appendToDisplay('7')">7</button>
+          <!-- numero -->
+          <button class="number" onclick="appendToDisplay('8')">8</button>
+          <!-- numero -->
+          <button class="number" onclick="appendToDisplay('9')">9</button>
+          <!-- numero -->
+          <button class="operator" onclick="appendToDisplay('*')">*</button>
+          <!-- operatore -->
+          <!-- Quarta riga -->
+          <button class="operator-canc" onclick="clearDisplay()">C</button>
+          <!-- operatore -->
+          <button class="number" onclick="appendToDisplay('0')">0</button>
+          <!-- numero -->
+          <button class="operator-equal" onclick="calculateResult()">=</button>
+          <!-- operatore -->
+          <button class="operator" onclick="appendToDisplay('/')">/</button>
+          <!-- operatore -->
+        </div>
       </div>
-    </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- Link al mio GitHub -->
+      <a href="https://github.com/UnluckyRio" target="_blank"
+        >Realizzata da Valerio Di Felice
+      </a>
+    </footer>
   </body>
+  <!-- Link JavaScript -->
   <script src="../SCRIPT/script.js"></script>
 </html>
