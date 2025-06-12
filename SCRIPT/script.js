@@ -1,8 +1,8 @@
 // Dichiarazione Var. Display
 const display = document.getElementById("display"); // Ottiene l'elemento display
 function appendToDisplay(symbol) {
-  const lastChar = display.value.slice(-1);
-  const operators = ["+", "-", "*", "/"];
+  const lastChar = display.value.slice(-1); // Ottiene l'ultimo carattere del display
+  const operators = ["+", "-", "*", "/"]; // Controlla se l'ultimo carattere è un operatore
 
   if (operators.includes(symbol) && operators.includes(lastChar)) {
     // Se l'ultimo carattere è un operatore e il nuovo simbolo è un operatore, non aggiungerlo

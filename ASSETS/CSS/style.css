@@ -1,7 +1,18 @@
 /* HTML */
 html {
   height: 100%; /* Assicura che html occupi il 100% dell'altezza disponibile */
+  margin: 0; /* Rimuove il margine predefinito */
+  padding: 0; /* Rimuove il padding predefinito */
+  background: #d60076; /* Colore di sfondo gradiente */
+  background: linear-gradient(
+    200deg,
+    rgba(214, 0, 118, 1) 0%,
+    rgba(38, 0, 127, 1) 80%
+  );
+  background-repeat: no-repeat; /* Impedisce la ripetizione del gradiente */
+  background-size: cover; /* Fa in modo che il gradiente copra l'intera area del body */
 }
+
 /* HEADER */
 header {
   width: 100%; /* Larghezza del header */
@@ -18,17 +29,19 @@ header p {
 }
 /* BODY */
 body {
+  height: 100%; /* Assicura che il body occupi il 100% dell'altezza disponibile */
+  margin: 0; /* Rimuove il margine predefinito */
+  padding: 0; /* Rimuove il padding predefinito */
+  background-color: transparent; /* Sfondo trasparente per il body */
   display: flex; /* Usa Flexbox per gestire l'altezza */
   flex-direction: column; /* Imposta la direzione della colonna per il layout */
   justify-content: center; /* Centra verticalmente il contenuto */
   align-items: center; /* Centra orizzontalmente il contenuto */
-  min-height: 100%; /* Questo è il più importante: garantisce che il body sia ALMENO alto come la viewport */
-  background: #d60076; /* Colore di sfondo gradiente */
-  background: linear-gradient(
-    100deg,
-    rgba(214, 0, 118, 1) 0%,
-    rgba(38, 0, 127, 1) 80%
-  );
+  min-height: 100vh; /* Garantisce che il body sia ALMENO alto come la viewport */
+}
+/* MAIN */
+main {
+  background-color: transparent; /* Sfondo trasparente per il main */
 }
 /* Sezione (div) dove ho inserito i pulsanti della calcolatrice */
 #buttons {
