@@ -52,11 +52,8 @@ main {
     1fr
   ); /* Quattro colonne di uguale larghezza */
   gap: 5px; /* Spazio tra i bottoni */
-  width: min(50vw, 400px); /* Sarà il 50% della viewport, ma non più di 400px */
-  height: min(
-    50vh,
-    450px
-  ); /* Sarà il 50% della viewport, ma non più di 450px */
+  height: 50vh; /* Altezza del div */
+  width: 50vw; /* Larghezza del div */
   padding: 10px; /*  Padding interno per il div */
   margin-bottom: 3rem; /* Spinge il div verso l'alto */
   border: solid 2px black; /* Bordo nero per il div */
@@ -70,13 +67,10 @@ main {
 #display {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px); /* Sfondo semitrasparente con effetto sfocato */
-  width: min(50vw, 400px); /* Sarà il 50% della viewport, ma non più di 400px */
-  height: min(
-    50vh,
-    450px
-  ); /* Sarà il 50% della viewport, ma non più di 450px */
+  width: 50vw; /* Larghezza del display */
+  height: 10vh; /* Altezza del display */
   color: black; /* Colore del testo del display */
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Dimensione del testo */
+  font-size: 3rem; /* Dimensione del testo del display */
   display: flex; /* Usa Flexbox per centrare il testo */
   justify-content: center; /* Centra il testo orizzontalmente */
   align-items: center; /* Centra il testo verticalmente */
@@ -90,41 +84,41 @@ main {
 .number {
   border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
   display: flex; /* Usa Flexbox per centrare il testo */
-  width: clamp(60px, 8vh, 90px); /* Larghezza del bottone */
-  height: clamp(60px, 8vh, 90px); /* Altezza del bottone */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
   border-radius: 50%; /* Rende i bottoni circolari */
   justify-content: center; /* Centra il testo orizzontalmente */
   align-items: center; /* Centra il testo verticalmente */
   background-color: rgb(15, 15, 15); /* Colore di sfondo per i bottoni */
   font-weight: bold; /* Grassetto per il testo */
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Dimensione del testo */
+  font-size: 3rem; /* Dimensione del testo */
   color: whitesmoke; /* Colore del testo */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
 }
 .operator {
   border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
   display: flex; /* Usa Flexbox per centrare il testo */
-  width: clamp(60px, 8vh, 90px); /* Larghezza del bottone */
-  height: clamp(60px, 8vh, 90px); /* Altezza del bottone */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
   border-radius: 50%; /* Rende i bottoni circolari */
   justify-content: center; /* Centra il testo orizzontalmente */
   align-items: center; /* Centra il testo verticalmente */
   background-color: #ffb13d; /* Colore di sfondo per i bottoni */
   font-weight: bold; /* Grassetto per il testo */
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Dimensione del testo */
+  font-size: 3rem; /* Dimensione del testo */
   color: whitesmoke; /* Colore del testo */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
 }
 .operator-canc {
   border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
   display: flex; /* Usa Flexbox per centrare il testo */
-  width: clamp(60px, 8vh, 90px); /* Larghezza del bottone */
-  height: clamp(60px, 8vh, 90px); /* Altezza del bottone */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
   border-radius: 50%; /* Rende i bottoni circolari */
   justify-content: center; /* Centra il testo orizzontalmente */
   align-items: center; /* Centra il testo verticalmente */
   font-weight: bold; /* Grassetto per il testo */
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Dimensione del testo */
+  font-size: 3rem; /* Dimensione del testo */
   background-color: #ff3d3d; /* Colore di sfondo per i bottoni */
   color: whitesmoke; /* Colore del testo */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
@@ -132,20 +126,14 @@ main {
 .operator-equal {
   border: 2px solid black; /* Aggiunge un bordo nero agli operatori */
   display: flex; /* Usa Flexbox per centrare il testo */
-  width: clamp(60px, 8vh, 90px); /* Larghezza del bottone */
-  height: clamp(60px, 8vh, 90px); /* Altezza del bottone */
+  width: 10vh; /* Larghezza del bottone */
+  height: 10vh; /* Altezza del bottone */
   border-radius: 50%; /* Rende i bottoni circolari */
   justify-content: center; /* Centra il testo orizzontalmente */
   align-items: center; /* Centra il testo verticalmente */
   background-color: #6fff59; /* Colore di sfondo per i bottoni */
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Dimensione del testo */
   font-weight: bold; /* Grassetto per il testo */
-  width: clamp(60px, 8vh, 90px); /* Larghezza del bottone */
-  height: clamp(
-    60px,
-    8vh,
-    90px
-  ); /* Altezza del bottone */ /* Dimensione del testo */
+  font-size: 3rem; /* Dimensione del testo */
   color: whitesmoke; /* Colore del testo */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra al bottone */
 }

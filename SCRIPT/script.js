@@ -34,7 +34,11 @@ function calculateResult() {
   }
 
   // Rimozione automatica di "Error" o "undefined"
-  if (display.value === "Error" || display.value === "undefined") {
+  if (
+    display.value === "Error" ||
+    display.value === "undefined" ||
+    display.value.toString() === "Infinity"
+  ) {
     // Timer per pulire il display dopo 2 secondi (2000 millisecondi)
     setTimeout(() => {
       clearDisplay(); // Chiama la tua funzione clearDisplay() per pulire
